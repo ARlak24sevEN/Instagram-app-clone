@@ -12,7 +12,8 @@ struct Instagram_app_cloneApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            HomeInstagramView()
+//            HomeInstagramView()
+            TabBar()
         }
     }
 }
