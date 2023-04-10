@@ -20,6 +20,7 @@ struct HomeInstagramView: View {
                 Post()
                 Post(image: "nadia",name:"Napas Chaikaew",description:"Flawer")
             }
+            TabBar()
            
         }
         
@@ -186,6 +187,26 @@ struct Post: View {
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 9)
+        }
+    }
+}
+
+struct TabBar: View {
+    var body: some View {
+        VStack(spacing: 0.0){
+            Divider()
+            HStack(spacing: 60) {
+                Image("homeIcon")
+                Image("searchIcon")
+                Image("realIcon")
+                Image("marketIcon")
+                Image("profile")
+                    .resizable()
+                    .frame(width: 21, height: 21)
+                    .cornerRadius(50)
+            }
+            .padding(.horizontal,25)
+            .padding(.top,10)
         }
     }
 }
